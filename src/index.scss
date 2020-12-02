@@ -1,0 +1,18 @@
+@import "scss/variables";
+@import "scss/mixins";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+  background: darken($blue, 10);
+}
+
+audio {
+  display: none;
+}

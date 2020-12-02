@@ -1,0 +1,54 @@
+@import "scss/variables";
+@import "scss/mixins";
+
+.Player {
+  position: relative;
+  width: 375px;
+  height: 667px;
+
+  background: darken($blue, 3);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px -5px rgba($black, 1);
+
+  overflow: hidden;
+
+  @media screen and (max-width: 375px) {
+    width: 100vw;
+  }
+
+  .Background {
+    position: absolute;
+    top: -25%;
+    left: -25%;
+
+    width: 150%;
+    height: 150%;
+
+    background-size: cover;
+    background-position: center center;
+    opacity: .2;
+    filter: blur(10px);
+  }
+
+  .Title {
+    position: relative;
+    width: 300px;
+    margin: 50px auto;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+
+  .Artwork {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+
+    background-size: cover;
+    background-position: center center;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px -5px rgba($black, .25);
+  }
+}
