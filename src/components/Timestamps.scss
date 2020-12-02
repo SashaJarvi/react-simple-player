@@ -1,0 +1,18 @@
+.Timestamps {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 2;
+
+  .Time {
+    font-size: 12px;
+  }
+}
